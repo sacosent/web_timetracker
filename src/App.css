@@ -1,38 +1,63 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #1e1e2e;
+  color: #fff;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.App-header {
+  width: 80%;
+  margin: auto;
+}
+
+.App-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #3b3b4f;
+  border: none;
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.log {
+  margin-top: 20px;
+  width: 60%;
+  text-align: left;
+}
+
+.log table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.log th, .log td {
+  border: 1px solid #555;
+  padding: 8px;
+}
+
+.chart {
+  margin-top: 20px;
+  width: 60%;
 }
